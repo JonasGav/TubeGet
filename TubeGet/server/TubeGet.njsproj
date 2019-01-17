@@ -12,7 +12,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>10fe9625-036d-4053-b59e-50785d038d12</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>server\app.js</StartupFile>
+    <StartupFile>server.js</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -29,16 +29,9 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
-    <Folder Include="client\" />
-    <Folder Include="server\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="server\package.json" />
-    <Content Include="server\README.md" />
-    <Content Include="server\TubeGet.njsproj" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="server\app.js" />
+    <Compile Include="server.js" />
+    <Content Include="package.json" />
+    <Content Include="README.md" />
   </ItemGroup>
   <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
